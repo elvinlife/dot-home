@@ -394,7 +394,10 @@ nnoremap  <f5> :TagbarToggle<CR>
 
 " cscope related
 cs add $CSCOPE_DB
+set cursorline
+"set cursorcolumn 
 :hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
 :hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
-:nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
-:nnoremap <silent> <Leader>l ml:execute 'match Search /\%'.line('.').'l/'<CR>
+":nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
+":nnoremap <silent> <Leader>l ml:execute 'match Search /\%'.line('.').'l/'<CR>
+"
