@@ -181,8 +181,8 @@ set expandtab
 set smarttab
 
 " 1 tab == 4 spaces
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set tabstop=2
 
 " Linebreak on 500 characters
 set lbr
@@ -395,9 +395,9 @@ nnoremap  <f5> :TagbarToggle<CR>
 " cscope related
 cs add $CSCOPE_DB
 set cursorline
-"set cursorcolumn 
-:hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
-:hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+set cursorcolumn 
+:hi CursorLine   cterm=NONE ctermbg=darkgrey ctermfg=white guibg=darkgrey guifg=white
+:hi CursorColumn cterm=NONE ctermbg=darkgrey ctermfg=white guibg=darkgrey guifg=white
 ":nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
 ":nnoremap <silent> <Leader>l ml:execute 'match Search /\%'.line('.').'l/'<CR>
 "
